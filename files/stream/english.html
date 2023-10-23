@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Metadata-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Know | What is Matter?</title>
+    <link rel="shortcut icon" type="img/x-icon" href="../images/icon.png"/>
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="../css/stream.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <!--Header-->
+        <header class="header">
+            <img src="../images/logo.png" alt="logo"/>
+            <h1><i>"A revolutionary way to educate."</i></h1>
+        </header>
+        <!--Navigation-->
+        <nav class="nav">
+            <ul>
+                <li><a href="../home.html">HOME</a></li>
+                <li><a href="../playlists.html">PLAYLISTS</a></li>
+                <li><a href="../contactus.html">CONTACT</a></li>
+                    <div class="dropdown">
+                        <p class="dropbtn">MORE 
+                        <i class="fa fa-caret-down"></i>
+                        </p>
+                        <div class="dropdown-content">
+                        <a href="../profiles.html">PROFILE</a>
+                        <a href="../following.html">FOLLOWING</a>
+                        <a href="../create.html">CREATE</a>
+                        <a href="../../index.html">LOG OUT</a>
+                    </div>
+                </li>
+            </ul>
+            <!--Search-->
+            <form class="search" action="../results.html">
+                <input type="search" placeholder="Search" class="text">
+                <button>Search</button>
+            </form>
+        </nav>
+        <main class="main">
+            <section class="video">
+                <video controls poster="../images/thumbnail-english.jpg" id="myVideo">
+                    <source src="../videos/matter.MOV" type="video/mp4">
+                </video>
+            </section>
+            <section class="details">
+                <div class="top">
+                    <h2>What is Matter?</h2>
+                    <button class="save"><i class="fas fa-bookmark"></i></button>
+                </div>
+                <div class="author">
+                    <img src="../images/profile6.jpeg" alt="">
+                    <a href="../profiles/barte.html"><h4>Rafael Barte</h4></a>
+                    <p>@rafaelbarte</p>
+                    <button>Following</button>
+                </div>
+            </section>
+            <section class="description">
+                    <h2 class="description-title">Description</h2>
+                    <p class="description-p">
+                        Let us all learn the English language together.
+                    </p><br>
+                    <p><b>Subject:</b>&nbspEnglish</p>
+                    <p><b>Grade Level:</b>&nbspGrade 1</p>
+            </section>
+            <section class="comments">
+                <h3>Comments</h3>
+                <form class="form">
+                    <input type="text" name="Comment" id="" placeholder="Add a comment here" class="comment-input" autocomplete="off">
+                    <input type="button" value="Comment" class="comment-button">
+                </form>
+                <div class="comments-people">
+                    <div class="commentary">
+                        <img src="../images/profilepic.jpg" alt="">
+                        <h4>Sample User</h4>
+                        <p>
+                            This is a sample comment. This may content any reaction; violent, positive or neagative to the video posted. Please don't read any further as this is only a filler. Thank you.
+                        </p>
+                    </div>
+                    <div class="commentary">
+                        <img src="../images/profilepic.jpg" alt="">
+                        <h4>Sample User</h4>
+                        <p>
+                            This is a sample comment. This may content any reaction; violent, positive or neagative to the video posted. Please don't read any further as this is only a filler. Thank you.
+                        </p>
+                    </div>
+                    <div class="commentary">
+                        <img src="../images/profilepic.jpg" alt="">
+                        <h4>Sample User</h4>
+                        <p>
+                            This is a sample comment. This may content any reaction; violent, positive or neagative to the video posted. Please don't read any further as this is only a filler. Thank you.
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+            <aside class="next">
+                <a href="matter.html">
+                    <div class="vid">
+                        <img src="../images/thumbnail-matter.jpg" alt="">
+                        <div class="vid-details">
+                            <h5>What is Matter?</h5>
+                            <p>Rafael Barte</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="phonics.html">
+                    <div class="vid">
+                        <img src="../images/thumbnail-phonics.jpg" alt="">
+                        <div class="vid-details">
+                            <h5>Phonics Discussion</h5>
+                            <p>Rafael Barte</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="adjectives.html">
+                    <div class="vid">
+                        <img src="../images/thumbnail-adjectives.jpg" alt="">
+                        <div class="vid-details">
+                            <h5>Proper use of Adjectives</h5>
+                            <p>Rafael Barte</p>
+                        </div>
+                    </div>
+                </a>
+            </aside>
+        </main>
+    </div>
+    <section class="save-window">
+        <div class="save-top">
+            <h2>Where do you want this video to be added?</h2>
+            <i class="fas fa-times close-window"></i>
+        </div>
+        <div class="playlists">
+            <div class="playlist first-child choice" onclick="selection(0)">
+                <img src="../images/playlist1.jpg" alt="">
+                <h4>SamplePlaylist</h4>
+            </div>
+            <div class="playlist choice" onclick="selection(1)">
+                <img src="../images/playlist2.jfif" alt="">
+                <h4>Rafael's Videos</h4>
+            </div>
+            <div class="playlist choice" onclick="selection(2)">
+                <img src="../images/playlist3.png" alt="">
+                <h4>MJ's Videos</h4>
+            </div>
+        </div>
+        <div class="add choice" onclick="selection(3)">
+            <i class="fas fa-plus"></i>
+            <h4>Add to a new Playlist</h4>
+        </div>
+        <div class="create-new">
+            <input type="text" placeholder="Playlist Title"><br>
+            <button>Create Playlist</button><br>
+            <button class="cancel">Cancel</button>
+        </div>
+        <button class="done">Done</button>
+    </section>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-col">
+            <img src="../images/logo.png" alt="logo">
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="rights">
+                © 2020 A-Know All Rights Reserved
+            </p>
+        </div>
+        <div class="right-col">
+            <h1>Our Newsletter</h1>
+            <div class="border"></div>
+                <p>
+                    Enter Your Email to get the latest news and updates.
+                </p>
+                <form action="" class="newsletter">
+                    <input type="text" class="textbox" placeholder="Enter your Email">
+                    <input type="submit" class="btn" value="Submit">
+                </form>
+        </div>
+    </footer>
+    <script>
+        const saveBtn = document.querySelector(".save");
+        const savePanel = document.querySelector(".save-window");
+        const closeBtn = document.querySelector(".close-window");
+        const done = document.querySelector(".done")
+        const select = document.querySelectorAll(".choice");
+        const add = document.querySelector(".add");
+        const createPanel = document.querySelector(".create-new");
+        const cancel = document.querySelector(".cancel");
+
+        saveBtn.addEventListener("click", function(){
+            savePanel.classList.add("active");
+            closeBtn.addEventListener("click", function(){
+                savePanel.classList.remove("active");
+            });
+            done.addEventListener("click", function(){
+                savePanel.classList.remove("active");
+            });
+            add.addEventListener("click", function(){
+                createPanel.classList.add("active");
+            });
+            cancel.addEventListener("click", function(){
+                createPanel.classList.remove("active");
+            });
+        });
+        function selection(selectIndex){
+            select[selectIndex].style.background="#00168C";
+            select[selectIndex].style.color="#fff";
+        }
+    </script>
+</body>
+</html>

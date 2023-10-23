@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Know | Create</title>
+    <link rel="shortcut icon" type="img/x-icon" href="images/icon.png"/>
+    <link rel="stylesheet" href="css/create.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!--Header-->
+        <header class="header">
+            <img src="images/logo.png" alt="logo"/>
+            <h1><i>"A revolutionary way to educate."</i></h1>
+        </header>
+        <!--Navigation-->
+        <nav class="nav">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="playlists.html">PLAYLISTS</a></li>
+                <li><a href="contactus.html">CONTACT</a></li>
+                    <div class="dropdown">
+                        <p class="dropbtn">MORE 
+                        <i class="fa fa-caret-down"></i>
+                        </p>
+                        <div class="dropdown-content">
+                        <a href="profiles.html">PROFILE</a>
+                        <a href="following.html">FOLLOWING</a>
+                        <a href="create.html">CREATE</a>
+                        <a href="../index.html">LOG OUT</a>
+                    </div>
+                </li>
+            </ul>
+            <!--Search-->
+            <form class="search" action="results.html">
+                <input type="search" placeholder="Search" class="text">
+                <button><a href="results.html">Search</a></button>
+            </form>
+        </nav>
+   <!--Main Content-->
+   <h2 class="title">Upload a Video</h2>
+        <main>
+            <section class="upload-section">
+                <img src="images/camera.png" class="preview" id="preview">
+                <i class="fas fa-times" id="cancel"></i>
+                <div class="file-name" id="file-name">No file chosen yet!</div>
+                <input type="file" id="default" hidden>
+                <button onclick="defaultBtnActive()" id="custom">CHOOSE A FILE</button>
+                <button onclick="move();this.disabled='true'"" id="upload">UPLOAD FILE</button>
+                <div class="progress-container">
+                    <div class="w3-light-grey">
+                        <div id="myBar" class="w3-green"></div>
+                     </div>
+                     <p id="myP">Upload <span id="demo">Video</span> %</p>
+                </div>
+            </section>
+            <section class="detail-section">
+                <input type="text" placeholder="Video Title" class="video-title"></br>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Video Description..."></textarea><br>
+                <input type="text" list="subject" placeholder="Subject" class="subject">
+                    <datalist id="subject">
+                        <option value="English">
+                        <option value="Mathematics">
+                        <option value="Filipino">
+                        <option value="ESP">
+                        <option value="Science">
+                        <option value="Araling Panlipunan">
+                    </datalist>
+                <input type="text" list="grade-level" placeholder="Grade Level" class="grade"><br>
+                    <datalist id="grade-level">
+                        <option value="Grade One">
+                        <option value="Grade Two">
+                        <option value="Grade Three">
+                        <option value="Grade Four">
+                        <option value="Grade Five">
+                        <option value="Grade Six">
+                        <option value="Grade Seven">
+                        <option value="Grade Eight">
+                        <option value="Grade Nine">
+                        <option value="Grade Ten">
+                        <option value="SHS">
+                        <option value="College">
+                    </datalist>
+                    <input type="text" list="privacy" placeholder="Privacy" class="privacy">
+                    <datalist id="privacy">
+                        <option value="Public">
+                        <option value="Only Me">
+                        <option value="Unlisted">
+                    </datalist>
+                
+            </section>
+        </main>
+    </div>
+    
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-col">
+            <img src="images/logo.png" alt="logo">
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="rights">
+                © 2020 A-Know All Rights Reserved
+            </p>
+        </div>
+        <div class="right-col">
+            <h1>Our Newsletter</h1>
+            <div class="border"></div>
+                <p>
+                    Enter Your Email to get the latest news and updates.
+                </p>
+                <form action="" class="newsletter">
+                    <input type="text" class="textbox" placeholder="Enter your Email">
+                    <input type="submit" class="btn" value="Submit">
+                </form>
+        </div>
+    </footer>
+    <script src="script/upload.js"></script>
+</body>
+</html>

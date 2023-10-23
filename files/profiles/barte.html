@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Metadata-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Know | @rafaelbarte</title>
+    <link rel="shortcut icon" type="img/x-icon" href="../images/icon.png"/>
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="../css/profiles.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!--Header-->
+        <header class="header">
+            <img src="../images/logo.png" alt="logo"/>
+            <h1><i>"A revolutionary way to educate."</i></h1>
+        </header>
+        <!--Navigation-->
+        <nav class="nav">
+            <ul>
+                <li><a href="../home.html">HOME</a></li>
+                <li><a href="../playlists.html">PLAYLISTS</a></li>
+                <li><a href="../contactus.html">CONTACT</a></li>
+                    <div class="dropdown">
+                        <p class="dropbtn">MORE 
+                        <i class="fa fa-caret-down"></i>
+                        </p>
+                        <div class="dropdown-content">
+                        <a href="../profiles.html">PROFILE</a>
+                        <a href="../following.html">FOLLOWING</a>
+                        <a href="create.html">CREATE</a>
+                        <a href="/../index.html">LOG OUT</a>
+                    </div>
+                </li>
+            </ul>
+            <!--Search-->
+            <form class="search">
+                <input type="search" placeholder="Search" class="text">
+                <button><a href="../results.html">Search</a></button>
+            </form>
+        </nav>
+        <!--Main Content-->
+        <main>
+            <div class="left">
+                <div class="main-info">
+                    <img src="../images/profile6.jpeg" class="profile-pic">
+                    <h2 class="name">Rafael Barte</h2>
+                    <p class="username">@rafaelbarte</p>
+                    <p class="email"><b>5 </b>Following <b>5 </b>Followers</p>
+                    <p class="sub">Student</p>
+                </div>
+                <div class="profile-description">
+                    <p class="email">rafaelbarte@gmail.com</p>
+                    <p class="address">Batangas, Philippines</p>
+                    <p class="bio">
+                        “Live as if you were to die tomorrow. Learn as if you were to live forever”
+                    </p>
+                    <p class="rating x"><b>Rating:</b>&nbsp ⭐⭐⭐⭐⭐</p>
+                    <p class="interest x"><b>Interest:</b>&nbsp English/Science</p>
+                    <button class="add">Add Review</button>
+                </div>
+            </div>
+            <div class="right">
+                <div class="tab-container">
+                    <div class="button-container">
+                        <button onclick="showPanel(0,'#001da0')" style="width: 50%;">Posts</button>
+                        <button onclick="showPanel(1,'#001da0')" style="width: 50%;">Review</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <section class="tab-panel posts">
+            <section class="videos">
+                <div class="video">
+                    <a href="../stream/matter.html">
+                        <div class="card vid">
+                            <img class="card-thumbnail" src="../images/thumbnail-matter.jpg">
+                            <h3>What is Matter?</h3>
+                            <p>Rafael Barte</p>
+                        </div>
+                    </a>
+                    <a href="../stream.html">
+                        <div class="card vid">
+                            <img class="card-thumbnail" src="../images/thumbnail-adjectives.jpg">
+                            <h3>Proper use of Adjectives</h3>
+                            <p>Rafael Barte</p>
+                        </div>
+                    </a>
+                    <a href="../stream.html">
+                        <div class="card vid">
+                            <img class="card-thumbnail" src="../images/thumbnail-english.jpg">
+                            <h3>Let's Learn English</h3>
+                            <p>Rafael Barte</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="video">
+                    <a href="../stream.html">
+                        <div class="card vid">
+                            <img class="card-thumbnail" src="../images/thumbnail-phonics.jpg">
+                            <h3>Phonics Discussion</h3>
+                            <p>Rafael Barte</p>
+                        </div>
+                    </a>
+                    <a href="../stream/rizal.html">
+                        <div class="card vid">
+                            <img class="card-thumbnail" src="../images/thumbnail-jose_rizal.png">
+                            <h3>Si Jose Rizal</h3>
+                            <p>Rafael Barte</p>
+                        </div>
+                    </a>
+                    <a href="../stream/islam.html">
+                        <div class="card vid">
+                            <img class="card-thumbnail" src="../images/thumbnail-islam.png">
+                            <h3>Paglaganaop ng Relihiyong Islam</h3>
+                            <p>Rafael Barte</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="video">
+                    <a href="../stream/pakikipagkapwa.html">
+                        <div class="card vid">
+                            <img class="card-thumbnail" src="../images/thumbnail-pakikipagkapwa.png">
+                            <h3>Ang Pakikipagkapwa</h3>
+                            <p>Rafael Barte</p>
+                        </div>
+                    </a>
+                    <a href="../stream/esp.html">
+                        <div class="card vid">
+                            <img class="card-thumbnail" src="../images/thumbnail-esp.png">
+                            <h3>Edukasyon sa Pagpapakatao 2</h3>
+                            <p>Rafael Barte</p>
+                        </div>
+                    </a>
+                    <a href="../stream/pangabay.html">
+                        <div class="card vid">
+                            <img class="card-thumbnail" src="../images/thumbnail-pangabay.png">
+                            <h3>Pang-Abay at Pang-Uri</h3>
+                            <p>Rafael Barte</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="video">
+                    <a href="../stream/kwentong_bayan.html">
+                        <div class="card vid">
+                            <img class="card-thumbnail" src="../images/thumbnail-kwentong bayan.png">
+                            <h3>Kwentong Bayan</h3>
+                            <p>Rafael Barte</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </section>
+        <section class="tab-panel review">
+            <div class="people-review">
+                <div class="rater">
+                    <img src="../images/sample.jpg">
+                    <div class="rater-name">
+                        <h3>Sample Name</h3>
+                        <p class="star">⭐⭐⭐⭐⭐</p>
+                    </div>
+                </div>
+                <div class="user-rating">
+                    <p class="review-rating">
+                        Ex do adipisicing eiusmod nostrud sint. Ullamco qui sit pariatur ad culpa pariatur aliqua. Enim ullamco dolor eu elit non laborum culpa nisi ea velit eiusmod fugiat dolore consequat. Consequat enim veniam aliquip ex. Nisi culpa consequat minim officia et enim laboris qui adipisicing adipisicing consequat consequat duis proident.
+                    </p>
+                </div>
+            </div>
+            <div class="people-review">
+                <div class="rater">
+                    <img src="../images/sample.jpg">
+                    <div class="rater-name">
+                        <h3>Sample Name</h3>
+                        <p class="star">⭐⭐⭐⭐⭐</p>
+                    </div>
+                </div>
+                <div class="user-rating">
+                    <p class="review-rating">
+                        Ex do adipisicing eiusmod nostrud sint. Ullamco qui sit pariatur ad culpa pariatur aliqua. Enim ullamco dolor eu elit non laborum culpa nisi ea velit eiusmod fugiat dolore consequat. Consequat enim veniam aliquip ex. Nisi culpa consequat minim officia et enim laboris qui adipisicing adipisicing consequat consequat duis proident.
+                    </p>
+                </div>
+            </div>
+            <div class="people-review">
+                <div class="rater">
+                    <img src="../images/sample.jpg">
+                    <div class="rater-name">
+                        <h3>Sample Name</h3>
+                        <p class="star">⭐⭐⭐⭐⭐</p>
+                    </div>
+                </div>
+                <div class="user-rating">
+                    <p class="review-rating">
+                        Ex do adipisicing eiusmod nostrud sint. Ullamco qui sit pariatur ad culpa pariatur aliqua. Enim ullamco dolor eu elit non laborum culpa nisi ea velit eiusmod fugiat dolore consequat. Consequat enim veniam aliquip ex. Nisi culpa consequat minim officia et enim laboris qui adipisicing adipisicing consequat consequat duis proident.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="add-review">
+            <h4>Add a Review to this User</h4>
+            <div class="review-panel">
+                <input type="text" list="stars" placeholder="Star Rating"><br>
+                    <datalist id="stars">
+                        <option value="⭐">
+                        <option value="⭐⭐">
+                        <option value="⭐⭐⭐">
+                        <option value="⭐⭐⭐⭐">
+                        <option value="⭐⭐⭐⭐⭐">
+                    </datalist>
+                    <textarea placeholder="Your review..."></textarea>
+            </div>
+            <button  class="close first">Add this Review</button>
+            <button  class="close second">Close</button>
+        </section>
+    </div>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-col">
+            <img src="../images/logo.png" alt="">
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="rights">
+                © 2020 A-Know All Rights Reserved
+            </p>
+        </div>
+        <div class="right-col">
+            <h1>Our Newsletter</h1>
+            <div class="border"></div>
+                <p>
+                    Enter Your Email to get the latest news and updates.
+                </p>
+                <form action="" class="newsletter">
+                    <input type="text" class="textbox" placeholder="Enter your Email">
+                    <input type="submit" class="btn" value="Submit">
+                </form>
+        </div>
+    </footer>
+    <script src="../script/tab.js"></script>
+    <script src="../script/upload-profile.js"></script>
+    <script>
+        const addBtn = document.querySelector(".add");
+        const reviewPanel = document.querySelector(".add-review");
+        const closeBtn = document.querySelector(".close");
+        const finished = document.querySelector(".second");
+
+        addBtn.addEventListener("click", function(){
+            reviewPanel.classList.add("active");
+        });
+        closeBtn.addEventListener("click", function(){
+            reviewPanel.classList.remove("active");
+        });
+        finished.addEventListener("click", function(){
+            reviewPanel.classList.remove("active");
+        });
+    </script>
+</body>
+</html>
+

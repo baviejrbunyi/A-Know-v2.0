@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Metadata-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Know | @ivangarcia</title>
+    <link rel="shortcut icon" type="img/x-icon" href="../images/icon.png"/>
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="../css/profiles.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!--Header-->
+        <header class="header">
+            <img src="../images/logo.png" alt="logo"/>
+            <h1><i>"A revolutionary way to educate."</i></h1>
+        </header>
+        <!--Navigation-->
+        <nav class="nav">
+            <ul>
+                <li><a href="../home.html">HOME</a></li>
+                <li><a href="../playlists.html">PLAYLISTS</a></li>
+                <li><a href="../contactus.html">CONTACT</a></li>
+                    <div class="dropdown">
+                        <p class="dropbtn">MORE 
+                        <i class="fa fa-caret-down"></i>
+                        </p>
+                        <div class="dropdown-content">
+                        <a href="../profiles.html">PROFILE</a>
+                        <a href="../following.html">FOLLOWING</a>
+                        <a href="create.html">CREATE</a>
+                        <a href="/../index.html">LOG OUT</a>
+                    </div>
+                </li>
+            </ul>
+            <!--Search-->
+            <form class="search">
+                <input type="search" placeholder="Search" class="text">
+                <button><a href="../results.html">Search</a></button>
+            </form>
+        </nav>
+        <!--Main Content-->
+        <main>
+            <div class="left">
+                <div class="main-info">
+                    <img src="../images/profile4.jpeg" class="profile-pic">
+                    <h2 class="name">Ivan Garcia</h2>
+                    <p class="username">@ivangarcia</p>
+                    <p class="sub">Student</p>
+                </div>
+                <div class="profile-description">
+                    <p class="email">ivangarcia@gmail.com</p>
+                    <p class="address">Batangas, Philippines</p>
+                    <p class="bio">
+                        “When you educate one person you can change a life, when you educate many you can change the world”
+                    </p>
+                    <p class="rating x"><b>Rating:</b>&nbsp No Rating</p>
+                    <p class="interest x"><b>Interest:</b>&nbsp No Interest</p>
+                    <button class="add">Add Review</button>
+                </div>
+            </div>
+            <div class="right">
+                <div class="tab-container">
+                    <div class="button-container">
+                        <button onclick="showPanel(0,'#001da0')" style="width: 50%;">Posts</button>
+                        <button onclick="showPanel(1,'#001da0')" style="width: 50%;">Review</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <section class="tab-panel posts">
+            <h2>This user currently didn't post anything yet</h2>
+        </section>
+        <section class="tab-panel review">
+            <h2>This user has currently no reviews</h2>
+        </section>
+        <section class="add-review">
+            <h4>Add a Review to this User</h4>
+            <div class="review-panel">
+                <input type="text" list="stars" placeholder="Star Rating"><br>
+                    <datalist id="stars">
+                        <option value="⭐">
+                        <option value="⭐⭐">
+                        <option value="⭐⭐⭐">
+                        <option value="⭐⭐⭐⭐">
+                        <option value="⭐⭐⭐⭐⭐">
+                    </datalist>
+                    <textarea placeholder="Your review..."></textarea>
+            </div>
+            <button  class="close first">Add this Review</button>
+            <button  class="close second">Close</button>
+        </section>
+    </div>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-col">
+            <img src="../images/logo.png" alt="">
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="rights">
+                © 2020 A-Know All Rights Reserved
+            </p>
+        </div>
+        <div class="right-col">
+            <h1>Our Newsletter</h1>
+            <div class="border"></div>
+                <p>
+                    Enter Your Email to get the latest news and updates.
+                </p>
+                <form action="" class="newsletter">
+                    <input type="text" class="textbox" placeholder="Enter your Email">
+                    <input type="submit" class="btn" value="Submit">
+                </form>
+        </div>
+    </footer>
+    <script src="../script/tab.js"></script>
+    <script src="../script/upload-profile.js"></script>
+    <script>
+        const addBtn = document.querySelector(".add");
+        const reviewPanel = document.querySelector(".add-review");
+        const closeBtn = document.querySelector(".close");
+        const finished = document.querySelector(".second");
+
+        addBtn.addEventListener("click", function(){
+            reviewPanel.classList.add("active");
+        });
+        closeBtn.addEventListener("click", function(){
+            reviewPanel.classList.remove("active");
+        });
+        finished.addEventListener("click", function(){
+            reviewPanel.classList.remove("active");
+        });
+    </script>
+</body>
+</html>
+

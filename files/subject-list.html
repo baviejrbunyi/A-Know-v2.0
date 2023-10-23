@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Know Home</title>
+    <link rel="shortcut icon" type="img/x-icon" href="images/icon.png"/>
+    <link rel="stylesheet" href="css/subject-list.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!--Header-->
+        <header class="header">
+            <img src="images/logo.png" alt="logo"/>
+            <h1><i>"A revolutionary way to educate."</i></h1>
+        </header>
+        <!--Navigation-->
+        <nav class="nav">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="playlists.html">PLAYLISTS</a></li>
+                <li><a href="contactus.html">CONTACT</a></li>
+                    <div class="dropdown">
+                        <p class="dropbtn">MORE 
+                        <i class="fa fa-caret-down"></i>
+                        </p>
+                        <div class="dropdown-content">
+                        <a href="profiles.html">PROFILE</a>
+                        <a href="following.html">FOLLOWING</a>
+                        <a href="create.html">CREATE</a>
+                        <a href="../index.html">LOG OUT</a>
+                    </div>
+                </li>
+            </ul>
+            <!--Search-->
+            <form class="search" action="results.html">
+                <input type="search" placeholder="Search" class="text">
+                <button><a href="results.html">Search</a></button>
+            </form>
+        </nav>
+        <!--Main content-->
+        <main>
+            <section class="subjects">
+                <div class="sub-top">
+                    <div class="sub-left">
+                        <h2>Subjects that we Offer</h2>
+                    </div>
+                </div>
+                <div class="sub-bottom">
+                    <a href="subjects/english.html" class="subject">
+                        <div>
+                            <img src="images/subjects/english.png" alt="">
+                            <h3>English</h3>
+                            <p>
+                                Learn the secrets of grammar of the International Language
+                            </p>
+                        </div>
+                    </a>
+                    <a href="subjects/mathematics.html" class="subject">
+                        <div>
+                            <img src="images/subjects/math.png" alt="">
+                            <h3>Mathematics</h3>
+                            <p>
+                                Master the power of numbers
+                            </p>
+                        </div>
+                    </a>
+                    <a href="subjects/araling panlipunan.html" class="subject">
+                        <div>
+                            <img src="images/subjects/araling_panlipunan.png" alt="">
+                            <h3>Araling Panlipunan</h3>
+                            <p>
+                                Know the world with the help of your fingertips
+                            </p>
+                        </div>
+                    </a>
+                    <a href="subjects/science.html" class="subject">
+                        <div>
+                            <img src="images/subjects/science.png" alt="">
+                            <h3>Science</h3>
+                            <p>
+                                Grasp the power of our evolving world and its mystyries
+                            </p>
+                        </div>
+                    </a>
+                    <a href="subjects/esp.html" class="subject">
+                        <div>
+                            <img src="images/subjects/esp.png" alt="">
+                            <h3>ESP</h3>
+                            <p>
+                                Be the best person you can be
+                            </p>
+                        </div>
+                    </a>
+                    <a href="subjects/filipino.html" class="subject">
+                        <div>
+                            <img src="images/subjects/filipino.png" alt="">
+                            <h3>Filipino</h3>
+                            <p>
+                                Become expert on our National language
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-col">
+            <img src="images/logo.png" alt="logo">
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="rights">
+                © 2020 A-Know All Rights Reserved
+            </p>
+        </div>
+        <div class="right-col">
+            <h1>Our Newsletter</h1>
+            <div class="border"></div>
+                <p>
+                    Enter Your Email to get the latest news and updates.
+                </p>
+                <form action="" class="newsletter">
+                    <input type="text" class="textbox" placeholder="Enter your Email">
+                    <input type="submit" class="btn" value="Submit">
+                </form>
+        </div>
+    </footer>
+</body>
+</html>

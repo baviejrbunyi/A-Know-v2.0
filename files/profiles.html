@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Metadata-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Know - @baviebunyijr</title>
+    <link rel="shortcut icon" type="img/x-icon" href="images/icon.png"/>
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="css/profiles.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!--Header-->
+        <header class="header">
+            <img src="images/logo.png" alt="logo"/>
+            <h1><i>"A revolutionary way to educate."</i></h1>
+        </header>
+        <!--Navigation-->
+        <nav class="nav">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="playlists.html">PLAYLISTS</a></li>
+                <li><a href="contactus.html">CONTACT</a></li>
+                    <div class="dropdown">
+                        <p class="dropbtn">MORE 
+                        <i class="fa fa-caret-down"></i>
+                        </p>
+                        <div class="dropdown-content">
+                        <a href="profiles.html">PROFILE</a>
+                        <a href="following.html">FOLLOWING</a>
+                        <a href="create.html">CREATE</a>
+                        <a href="../index.html">LOG OUT</a>
+                    </div>
+                </li>
+            </ul>
+            <!--Search-->
+            <form class="search">
+                <input type="search" placeholder="Search" class="text">
+                <button><a href="results.html">Search</a></button>
+            </form>
+        </nav>
+        <!--Main Content-->
+        <main>
+            <div class="left">
+                <div class="main-info">
+                    <img src="images/profile1.jpeg" class="profile-pic">
+                    <h2 class="name">Bavie A. Bunyi Jr.</h2>
+                    <p class="username">@baviebunyijr</p>
+                    <p class="email"><b>5 </b>Following <b>5 </b>Followers</p>
+                    <p class="sub">Student</p>
+                </div>
+                <div class="profile-description">
+                    <p class="email">baviejrbunyi@gmail.com</p>
+                    <p class="address">Batangas, Philippines</p>
+                    <p class="bio">
+                        "Teach the children, so it will not be necessary to teach the adults."
+                    </p>
+                    <p class="rating x"><b>Rating:</b>&nbsp No Rating</p>
+                    <p class="interest x"><b>Interest:</b>&nbsp English</p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="tab-container">
+                    <div class="button-container">
+                        <button onclick="showPanel(0,'#001da0')">Posts</button>
+                        <button onclick="showPanel(1,'#001da0')">Review</button>
+                        <button onclick="showPanel(2,'#001da0')">Settings</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <section class="tab-panel posts">
+            <h2>You currently doesnt have any post yet.<br> <a href="create.html">Click here to create now.</a></h2>
+        </section>
+        <section class="tab-panel review">
+            <h2>No reviews recieved</h2>
+        </section>
+        <section class="tab-panel settings">
+            <div class="main">
+                <div class="profile-pic-upload">
+                    <img src="images/profile1.jpeg" alt="" id="preview" class="preview">
+                    <i class="fas fa-times" id="cancel"></i>
+                    <div class="file-name" id="file-name">No file chosen yet!</div><br>
+                    <input type="file" id="default" hidden>
+                    <button onclick="defaultBtnActive()" id="custom">Choose a File</button><br>
+                    <button class="save">Save Changes</button>
+                </div>
+                <div class="main-details">
+                    <form action="#">
+                        <input type="text" placeholder="Bavie A. Bunyi Jr.">
+                        <input type="text" placeholder="@baviebunyijr"><br>
+                        <input type="text" placeholder="Student">
+                        <input type="text" placeholder="baviejrbunyi@gmail.com"><br>
+                        <textarea placeholder="Bio"></textarea><br>
+                        <label>Birthday:</label>
+                        <input type="input" placeholder="May 29, 2004">
+                        <label>Address:</label>
+                        <input type="text" placeholder="Batangas, Philippines"><br>
+                        <label for="">Interest:</label>
+                        <input type="text" placeholder="English">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-col">
+            <img src="images/logo.png" alt="">
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="rights">
+                © 2020 A-Know All Rights Reserved
+            </p>
+        </div>
+        <div class="right-col">
+            <h1>Our Newsletter</h1>
+            <div class="border"></div>
+                <p>
+                    Enter Your Email to get the latest news and updates.
+                </p>
+                <form action="" class="newsletter">
+                    <input type="text" class="textbox" placeholder="Enter your Email">
+                    <input type="submit" class="btn" value="Submit">
+                </form>
+        </div>
+    </footer>
+    <script src="script/tab.js"></script>
+    <script src="script/upload-profile.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Metadata-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Know | Search Results</title>
+    <link rel="shortcut icon" type="img/x-icon" href="images/icon.png"/>
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="css/results.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <!--Header-->
+        <header class="header">
+            <img src="images/logo.png" alt="logo"/>
+            <h1><i>"A revolutionary way to educate."</i></h1>
+        </header>
+        <!--Navigation-->
+        <nav class="nav">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="playlists.html">PLAYLISTS</a></li>
+                <li><a href="contactus.html">CONTACT</a></li>
+                    <div class="dropdown">
+                        <p class="dropbtn">MORE 
+                        <i class="fa fa-caret-down"></i>
+                        </p>
+                        <div class="dropdown-content">
+                        <a href="profiles.html">PROFILE</a>
+                        <a href="following.html">FOLLOWING</a>
+                        <a href="create.html">CREATE</a>
+                        <a href="../index.html">LOG OUT</a>
+                    </div>
+                </li>
+            </ul>
+            <!--Search-->
+            <form class="search" action="results.html">
+                <input type="search" placeholder="Search" class="text">
+                <button><a href="results.html">Search</a></button>
+            </form>
+        </nav>
+        <main>
+            <h2>Results for: <i>"Search Sample"</i></h2>
+            <section class="main-container">
+                <section class="filter">
+                    <h3>Filters</h3>
+                    <form >
+                        <div class="subject">
+                            <h4>Created Within:</h4>
+                            <input type="text" list="relevance" placeholder="Relevance">
+                            <datalist id="relevance">
+                                <option value="All Time">
+                                <option value="This Month">
+                                <option value="This Week">
+                                <option value="This Day">
+                                <option value="This Year">
+                            </datalist>
+                        </div>
+                        <div class="duration">
+                            <h4>Duration:</h4>
+                            <input type="radio" name="Duration" id="Option-1">
+                            <label for="Option-1">Less than 1 hour</label><br>
+                            <input type="radio" name="Duration" id="Option-1">
+                            <label for="Option-2">1 hour to 2 hours</label><br>
+                            <input type="radio" name="Duration" id="Option-1">
+                            <label for="Option-3">Longer than 2 hours</label><br>
+                        </div>
+                        <div class="subject">
+                            <h4>Subject:</h4>
+                            <input type="text" list="subject" placeholder="Subject">
+                            <datalist id="subject">
+                                <option value="English">
+                                <option value="Mathematics">
+                                <option value="Filipino">
+                                <option value="ESP">
+                                <option value="Science">
+                                <option value="Araling Panlipunan">
+                            </datalist>
+                        </div>
+                        <div class="grade">
+                            <h4>Grade Level:</h4>
+                            <input type="text" list="grade-level" placeholder="Grade Level">
+                            <datalist id="grade-level">
+                                <option value="Grade One">
+                                <option value="Grade Two">
+                                <option value="Grade Three">
+                                <option value="Grade Four">
+                                <option value="Grade Five">
+                                <option value="Grade Six">
+                                <option value="Grade Seven">
+                                <option value="Grade Eight">
+                                <option value="Grade Nine">
+                                <option value="Grade Ten">
+                                <option value="SHS">
+                                <option value="College">
+                            </datalist>
+                        </div>
+                        <button>Apply Filters</button>
+                    </form>
+                </section>
+                <section class="video-results">
+                    <a href="stream/rizal.html">
+                    <div class="video">
+                        <img src="images/thumbnail-jose_rizal.png" alt="" class="video-thumbnail">
+                        <div class="video-details">
+                            <h5>Si Jose Rizal</h5>
+                            <h6>5 min</h6>
+                            <p class="author">Rafael Barte</p>
+                            <p class="description">
+                                This video is not owned by the creators of this webpage, thus all credit must be given to the rightful owner. You may visit the original by <a href="https://www.youtube.com/watch?v=lJFaClY-EbA&feature=youtu.be" style="color: red;" target="_blank">clicking here.</a> Thank you.
+                            </p>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="stream/pangabay.html">
+                    <div class="video">
+                        <img src="images/thumbnail-pangabay.png" alt="" class="video-thumbnail">
+                        <div class="video-details">
+                            <h5>Pang-Abay at Pang-Uri</h5>
+                            <h6>6 min</h6>
+                            <p class="author">Rafael Barte</p>
+                            <p class="description">
+                                This video is not owned by the creators of this webpage, thus all credit must be given to the rightful owner. You may visit the original by <a href="https://www.youtube.com/watch?v=MD4loZ9elg8&feature=youtu.be" style="color: red;" target="_blank">clicking here.</a> Thank you.
+                            </p>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="stream/matter.html">
+                    <div class="video">
+                        <img src="images/thumbnail-matter.jpg" alt="" class="video-thumbnail">
+                        <div class="video-details">
+                            <h5>What is Matter?</h5>
+                            <h6>4 min</h6>
+                            <p class="author">Rafael Barte</p>
+                            <p class="description">
+                                Did you know that anything around us are matter? Matter is anything that take up space like the chair you are sitting or even the air you are currently breathing. Also, matter is divided into three categories which are the solids, liquids and...
+                            </p>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="stream/adjectives.html">
+                    <div class="video">
+                        <img src="images/thumbnail-adjectives.jpg" alt="" class="video-thumbnail">
+                        <div class="video-details">
+                            <h5>Proper use of Adjectives</h5>
+                            <h6>7 min</h6>
+                            <p class="author">Rafael Barte</p>
+                            <p class="description">
+                                Adjectives are words that describe or modify other words, making your writing and speaking much more specific, and a whole lot more interesting. Words like small, blue, and sharp are descriptive, and they are all examples of adjectives.
+                            </p>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="stream/mathematics.html">
+                    <div class="video">
+                        <img src="images/thumbnail-math.png" alt="" class="video-thumbnail">
+                        <div class="video-details">
+                            <h5>Math. Subtraction & Addition</h5>
+                            <h6>8 min</h6>
+                            <p class="author">Mark Justin Aguila</p>
+                            <p class="description">
+                                This video is not owned by the creators of this webpage, thus all credit must be given to the rightful owner. You may visit the original by <a href="https://www.youtube.com/watch?v=G_Qijre6VJo" style="color: red;" target="_blank">clicking here.</a> Thank you.
+                            </p>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="stream/english.html">
+                    <div class="video">
+                        <img src="images/thumbnail-english.jpg" alt="" class="video-thumbnail">
+                        <div class="video-details">
+                            <h5>Let's Learn English</h5>
+                            <h6>4 min</h6>
+                            <p class="author">Rafael Barte</p>
+                            <p class="description">
+                                Let us all learn the English language together.
+                            </p>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="stream/phonics.html">
+                    <div class="video">
+                        <img src="images/thumbnail-phonics.jpg" alt="" class="video-thumbnail">
+                        <div class="video-details">
+                            <h5>Phonics Discussion</h5>
+                            <h6>6 min</h6>
+                            <p class="author">Rafael Barte</p>
+                            <p class="description">
+                                Phonics is a method for teaching people how to read and write an alphabetic language (such as English, Arabic and Russian). It is done by demonstrating the relationship between the sounds of the spoken language (phonemes)...
+                            </p>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="stream/algebra.html">
+                    <div class="video">
+                        <img src="images/thumbnail-algebra.png" alt="" class="video-thumbnail">
+                        <div class="video-details">
+                            <h5>Algebra | Introduction to Numbers and Variables</h5>
+                            <h6>16 min</h6>
+                            <p class="author">Mark Justin Aguila</p>
+                            <p class="description">
+                                This video is not owned by the creators of this webpage, thus all credit must be given to the rightful owner. You may visit the original by <a href="https://www.youtube.com/watch?v=sGoQGjq4X38" style="color: red;" target="_blank">clicking here.</a> Thank you.
+                            </p>
+                        </div>
+                    </div>
+                    </a>
+                </section>
+            </section>
+        </main>
+    </div>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-col">
+            <img src="images/logo.png" alt="logo">
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="rights">
+                © 2020 A-Know All Rights Reserved
+            </p>
+        </div>
+        <div class="right-col">
+            <h1>Our Newsletter</h1>
+            <div class="border"></div>
+                <p>
+                    Enter Your Email to get the latest news and updates.
+                </p>
+                <form action="" class="newsletter">
+                    <input type="text" class="textbox" placeholder="Enter your Email">
+                    <input type="submit" class="btn" value="Submit">
+                </form>
+        </div>
+    </footer>
+</body>
+</html>
