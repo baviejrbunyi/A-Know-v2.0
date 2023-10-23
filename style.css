@@ -1,0 +1,144 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #AEB0F7;
+}	
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #00168C;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.logo-container img {
+  margin-top: 10px;
+}
+.nav {
+  display: flex;
+}
+.nav li {
+  margin: 50px;
+  font-size: 20px;
+  list-style: none;
+}
+.nav li a {
+  text-decoration: none;
+  color: #fff;
+}
+.nav li a:hover {
+  cursor: pointer;
+  text-shadow: 5px 10px 10px rgba(0, 0, 0, 0.75), -3px 10px 12px rgba(0, 0, 0, 0.75);
+}
+.Intro-text h1 {
+  margin: 50px 0 10px 0;
+  font-size: 45px;
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+.Intro-text p {
+  margin: 20px 0 100px 0;
+  width: 400px;
+  font-size: 15px;
+  text-align: justify;
+  font-family: 'Roboto';
+  font-weight: 300;
+}
+.presentation {
+  background: #AEB0F7;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+	align-items: center;
+}
+.image {
+  width: 500px;
+  height: 445px;
+  margin-top: 50px;
+}
+.introduction {
+  display: flex;
+}
+.Intro-text {
+  margin-left: 50px;
+}
+.image {
+  margin-left: 20%;
+}
+.intro-text h1 {
+  font-size: 44px;
+  font-weight: 500;	 
+}
+.cta-watch {
+  margin-top: 45px;
+  border-radius: 20px;
+  border: none;
+  background-color:#00168C;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 15px;
+  text-decoration: none;
+}
+.cta-watch:hover {
+  background: #A7EFFF;
+  color: #000;
+  opacity: 0.8;
+  border: #000 1pt solid;
+}
+.mission, .vision, .pricing {
+  min-height: 100vh;
+  display: flex;
+  padding-top: 250px;
+  padding-left: 50px;
+  justify-content: space-around;
+  width: 90%;
+}
+.content{
+  width: 500px;
+}
+.content h3 {
+  font-size: 45px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  text-align: right;
+}
+.content p {
+  margin-top: 30px;
+  font-size: 15px;
+  font-family: 'Roboto';
+  font-weight: 300;
+  text-align: justify;
+}
+.mission-image, .vision-image, .pricing-image {
+  height: 445px;
+  width: 500px;
+}
+.vision {
+  min-height: 100vh;
+  padding-left: 100px;
+  padding-right: 0px;
+}
+.vision .content h3 {
+  text-align: left;
+}
+.pricing {
+  min-height: 100vh;
+}
+.pricing .content p {
+  margin-bottom: 150px;
+}
+.button {
+  margin-left: 380px;
+}
+.two {
+  margin-right: 100px;
+}
